@@ -8,7 +8,7 @@ public class Main {
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Для создания прямоугольного треугольника введите значения катетов:");
         RightTriangle rightTriangle = new RightTriangle(sc2.nextInt(), sc2.nextInt());
-        rightTriangle.setHypotenuse(rightTriangle.calculateHypotenuse());
-        System.out.print("Значение гипотенузы вашего треугольника: " + rightTriangle.getHypotenuse());
+        //rightTriangle.setHypotenuse(rightTriangle.calculateHypotenuse());
+        rightTriangle.calculateHypotenuse();
     }
 }

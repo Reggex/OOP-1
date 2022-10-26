@@ -38,9 +38,13 @@ public class RightTriangle {
         this.hypotenuse = hypotenuse;
     }
 
-    public double calculateHypotenuse(){
-        hypotenuse = Math.sqrt(cathet1*cathet1+cathet2*cathet2);
-        return hypotenuse;
+    public void calculateHypotenuse(){
+        if (cathet1 < 0 || cathet2 < 0){
+            System.out.println("Стороны треугольника не могут быть меньше нуля");
+        } else {
+            this.hypotenuse = Math.sqrt(cathet1*cathet1+cathet2*cathet2);
+            System.out.println("Значение гипотенузы вашего треугольника: " + getHypotenuse());
+        }
     }
 
 }
